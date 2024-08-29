@@ -1,0 +1,103 @@
+/* Reset margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: 'Times New Roman', serif;
+   
+}
+
+/* Container for header */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; /* 20px top and bottom padding, no padding on sides */
+    border-bottom: 2px solid #333; /* Dark gray border */
+   
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 32px;
+    margin: 0;
+    padding-left: 20px; /* Adding padding to align with the content */
+    color: #333; /* Dark gray color for the heading */
+}
+
+/* Navigation list styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-right: 20px; /* Adding padding to align with the content */
+    display: flex;
+    gap: 20px;
+}
+
+/* Navigation links styles */
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Dark gray color for the navigation links */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Navigation links hover styles */
+nav ul li a:hover {
+    color: #555; /* Slightly lighter gray on hover */
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller font size for smaller screens */
+        padding-left: 20px; /* Ensure consistent padding */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 10px; /* Reduce gap between navigation items */
+        padding-right: 20px; /* Ensure consistent padding */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Smaller font size for navigation links */
+    }
+}
+#lightbox {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the close button is on top */
+}

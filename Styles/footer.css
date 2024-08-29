@@ -1,0 +1,86 @@
+/* Footer */
+footer {
+    background-color:rgb(31, 24, 24); /* Black background */
+    color: #ffffff; /* White text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    width: 100%; /* Full width of viewport */
+    font-family: "Nunito Sans", sans-serif;
+    box-shadow: 0 -2px 5px rgba(34, 32, 32, 0.2); /* Soft shadow for separation */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-between; /* Space between sections */
+    gap: 20px; /* Gap between sections */
+    max-width: 1200px; /* Max width for larger screens */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 0 20px; /* Horizontal padding */
+    width: 100%; /* Full width inside container */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.footer-content > div {
+    flex: 1; /* Allow sections to grow */
+    min-width: 250px; /* Minimum width for better responsiveness */
+}
+
+.footer-content h3 {
+    font-size: 18px; /* Font size for headings */
+    margin-bottom: 15px; /* Space below headings */
+    font-family: 'Georgia', serif; /* Serif font for headings */
+}
+
+.footer-content p {
+    font-size: 14px; /* Font size for paragraphs */
+    line-height: 1.6; /* Line height for readability */
+    margin: 0; /* Remove default margin */
+}
+
+.footer-content ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.footer-content ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.footer-content a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff; /* White text color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-content a:hover {
+    color: #4a90e2; /* Soft blue color on hover */
+}
+
+.footer-bottom {
+    text-align: center; /* Center align the text */
+    padding: 10px 0; /* Padding for top and bottom */
+    font-size: 12px; /* Font size for copyright text */
+    border-top: 1px solid #333333; /* Subtle top border */
+}
+
+.footer-bottom p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .footer-content > div {
+        min-width: auto; /* Allow sections to fit better */
+        text-align: center; /* Center align text */
+    }
+
+    .footer-content ul {
+        text-align: center; /* Center align list items */
+    }
+}

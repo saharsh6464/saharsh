@@ -1,0 +1,170 @@
+
+
+
+
+
+
+
+/* About Me Section */
+.about-me {
+    padding: 40px 20px;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #f1f1f1; /* A bit darker shade of white */
+}
+
+/* About Me Content */
+.about-me-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    padding-top: 10px;
+    
+    background-color: #ffffff; /* Light beige background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Profile Photo Styling */
+.profile-photo {
+    width: 180px;
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-right: 20px;
+}
+.saharshhh{
+
+}
+/* About Details */
+.about-details {
+     font-family: "Jost", sans-serif;
+    font-weight: 500;
+   
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+}
+
+/* About Me Headings */
+.about-details h1 {
+    font-size: 28px;
+    font-family: "Jost", sans-serif;
+    color: #333; /* Darker shade for headings */
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+/* About Me Paragraphs */
+.about-details p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555; /* Slightly lighter for the paragraphs */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-me-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+    }
+
+    .about-details {
+        text-align: center;
+    }
+}
+.aboutme{
+    margin-top: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300px;
+    margin-bottom: 5px; /* Space between the title and the details */
+}
+
+.abouttext {
+    font-family: 'Georgia', serif; /* A classic serif font for the title */
+    font-size: 2em; /* Larger font size for prominence */
+    color: #2c3e50; /* Darker color for better contrast */
+    text-align: left; /* Aligns text to the left */
+    border-bottom: 2px solid #4a90e2; /* Blue underline for emphasis */
+    padding-bottom: 10px; /* Padding below the text for spacing */
+    margin: 0; /* Remove default margin */
+}
+/* Header Styling */
+header {
+    background-color: #ffffff; /* Clean white background for the header */
+    padding: 20px 0; /* Vertical padding */
+    border-bottom: 1px solid #dcdcdc; /* Light gray border for separation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    position: fixed; /* Fixed position for sticky header */
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure header is on top */
+}
+
+/* Container for header content */
+#headercont {
+    max-width: 1200px; /* Max width for larger screens */
+    margin: 0 auto; /* Center align container */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between title and navigation */
+    align-items: center; /* Center align items vertically */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+/* Header Title */
+header h1 {
+    font-family: 'Merriweather', serif; /* Elegant serif font */
+    font-size: 2em; /* Larger font size for prominence */
+    color: #2c3e50; /* Darker color for better contrast */
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Align items in a row */
+    gap: 20px; /* Space between menu items */
+}
+
+nav ul li {
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Arial', sans-serif; /* Clean sans-serif font for links */
+    font-size: 1em; /* Standard font size */
+    color: #333; /* Dark gray text color */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transitions */
+    padding-bottom: 5px; /* Space below text for underline */
+    border-bottom: 2px solid transparent; /* Transparent underline initially */
+}
+
+nav ul li a:hover {
+    color: #4a90e2; /* Change color on hover */
+    border-bottom: 2px solid #4a90e2; /* Blue underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #headercont {
+        flex-direction: column; /* Stack title and navigation vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 10px; /* Reduced space between items */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+}

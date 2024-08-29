@@ -1,0 +1,140 @@
+/* Contact Me Section */
+.contact-me {
+    background-color: #ffffff; /* White background */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px;
+    margin: 20px auto; /* Center and add margin */
+    max-width: 1200px; /* Full width with max-width for responsiveness */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.contact-me h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 24px; /* Adjusted font size for smaller screens */
+    color: #2c3e50; /* Darker gray */
+    font-family: "Jost", sans-serif;
+    text-align: center; /* Center align the heading */
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 20px; /* Space between the contact details and form */
+    justify-content: space-between; /* Space between form and details */
+}
+
+.contact-form, .contact-details {
+    flex: 1; /* Both sections take equal space */
+    min-width: 280px; /* Minimum width to ensure good layout on small screens */
+}
+
+.contact-details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-details p {
+    margin-bottom: 20px; /* Space below the paragraph */
+    font-size: 16px; /* Adjusted font size */
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align content */
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark gray text color */
+    border: 2px solid #e0e0e0; /* Subtle border */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-bottom: 15px; /* Space between list items */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-item:hover {
+    background-color: #f5f5f5; /* Light gray background on hover */
+    color: #4a90e2; /* Soft blue text color on hover */
+}
+
+.contact-item .icon {
+    width: 24px; /* Adjusted size for responsiveness */
+    height: 24px; /* Adjusted size for responsiveness */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.contact-item .text {
+    font-size: 16px; /* Adjusted for smaller screens */
+}
+
+/* Contact Form */
+.contact-form h3 {
+    font-size: 20px; /* Adjusted font size for smaller screens */
+    color: #2c3e50; /* Darker gray */
+    text-align: center; /* Center align the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Space between form elements */
+}
+
+.contact-form label {
+    font-size: 14px; /* Adjusted for smaller screens */
+    color: #333; /* Dark gray text */
+}
+
+.contact-form input, 
+.contact-form textarea {
+    border: 1px solid #dcdcdc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+    font-size: 14px; /* Adjusted font size for smaller screens */
+}
+
+.contact-form button {
+    background-color: #4a90e2; /* Soft blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+    font-size: 14px; /* Adjusted font size for smaller screens */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #357abd; /* Darker blue on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack form and details on smaller screens */
+    }
+
+    .contact-item {
+        justify-content: center; /* Center align for smaller screens */
+        text-align: center;
+    }
+
+    .contact-item .icon {
+        margin-right: 0;
+        margin-bottom: 8px; /* Space below the icon */
+    }
+}
+.contact-me{
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+}
