@@ -84,3 +84,33 @@ footer {
         text-align: center; /* Center align list items */
     }
 }
+
+#bestietitle {
+    text-align: center; /* Center the title */
+    margin: 20px 0; /* Add space above and below the title */
+    padding: 10px; /* Add some padding inside the title section */
+    margin-top: 0;
+    font-family: "Jost", sans-serif;
+    background-color: lightbeige; /* Light beige background for the title area */
+    border-radius: 10px; /* Slightly round the corners of the background */
+}
+
+#bestiepara h1 {
+    font-size: 2.5rem; /* Large title font size */
+    color: #333; /* Dark gray text color */
+    margin: 0; /* Remove default margins */
+    font-family: "Jost", sans-serif;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #bestiepara h1 {
+        font-size: 2rem; /* Slightly smaller font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    #bestiepara h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile devices */
+    }
+}
