@@ -227,52 +227,53 @@ img {
     }
 }
 
-
 .best-pictures {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
-    gap: 10px; /* Space between images */
-    justify-content: center; /* Center-align items */
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust gap between images */
+    justify-content: center; /* Center align the images */
+    padding: 10px; /* Add some padding around the container */
 }
 
-/* Best Picture Item */
+.best-pictures div {
+    flex: 1 1 calc(25% - 20px); /* Four images per row with spacing */
+    overflow: hidden; /* Ensure images do not overflow their containers */
+    margin-bottom: 10px; /* Add space below each image */
+}
+
 .bestie {
-    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 400px; /* Maximum height to prevent excessive scaling */
-    margin: 0; /* Remove margins */
-    border: 2px solid #dcdcdc; /* Light gray border for images */
-    
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth transitions */
+    box-shadow: none; /* Remove box shadow */
 }
 
+/* Hover effect */
+.bestie:hover {
+    transform: scale(1.05); /* Slightly scale the image on hover */
+    filter: brightness(1.1); /* Slightly brighten the image on hover */
+}
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .best-pictures {
-        gap: 15px; /* Reduce space between images */
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .best-pictures div {
+        padding: 25px;
+        flex: 1 1 calc(33.33% - 20px); /* Three images per row */
     }
+}
 
-    .bestie {
-        flex: 1 1 45%; /* Adjust flex-basis for medium screens */
+@media (max-width: 768px) {
+    .best-pictures div {
+        flex: 1 1 calc(50% - 20px); /* Two images per row */
     }
 }
 
 @media (max-width: 480px) {
-    .best-pictures {
-        gap: 10px; /* Further reduce space between images */
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: center; /* Center-align items vertically */
-    }
-
-    .bestie {
-        flex: 1 1 80%; /* Adjust flex-basis for small screens */
-        max-height: 300px; /* Reduce maximum height */
+    .best-pictures div {
+        flex: 1 1 100%; /* One image per row on small screens */
+        padding: 25px;
     }
 }
-
 
 
 .best img:hover {
